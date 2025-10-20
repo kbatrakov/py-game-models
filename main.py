@@ -17,7 +17,7 @@ def main() -> None:
             Skill.objects.get_or_create(
                 name=skill["name"],
                 defaults={"bonus": skill["bonus"],
-                          "race": race,})
+                          "race": race})
 
         guild = None
         if data.get("guild"):
